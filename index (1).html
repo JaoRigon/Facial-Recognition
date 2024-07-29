@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="border">
+        <div class="container">    
+            <div class="left-section">
+                <h2>Tire uma foto para concluir seu Cadastro!</h2>
+                <video id="video" width="320" height="240" autoplay></video>
+                <button type="button" id="capture">Capturar Foto</button>
+                <p id="camera-error" style="display:none; color:red;">Erro ao acessar a câmera. Verifique se a câmera está conectada e permita o acesso.</p>
+            </div>
+            <div class="right-section">
+                <form id="cadastro-form">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                    <input type="number" id="numero" name="numero" placeholder="Número" required>
+                    <button type="button" id="enviar">Enviar Cadastro</button>
+                    <button type="button" id="prosseguir">Prosseguir</button>
+                    <input type="hidden" id="photo" name="photo">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

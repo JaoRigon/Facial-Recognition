@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Adicionando a imagem da logo -->
+    <img src="ELEMENTO-direita.png" alt="Logo" class="logo">
+    <img src="ELEMENTO-esquerda.png" alt="logo2" class="logo2">
+
+    <div class="container">
+        <div class="left-section">
+            <h2>Tire uma foto para concluir seu Cadastro!</h2>
+            <video id="video" width="320" height="240" autoplay></video>
+            <p id="camera-error" style="display:none; color:red;">Erro ao acessar a câmera. Verifique se a câmera está conectada e permita o acesso.</p>
+        </div>
+
+        <div class="right-section">
+            <form class="form_main" action="">
+                <p class="heading">Cadastro</p>
+                <div class="inputContainer">
+                    <svg viewBox="0 0 16 16" fill="#2e2e2e" height="16" width="16" xmlns="http://www.w3.org/2000/svg" class="inputIcon">
+                    <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"></path>
+                    </svg>
+                <input placeholder="Nome Completo" id="username" class="inputField" type="text">
+                </div>
+                
+                <div class="inputContainer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2e2e2e" class="inputIcon" viewBox="0 0 16 16">
+                        <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                      </svg>
+                    <input placeholder="Idade" id="idade" class="inputField" type="text">
+                </div>    
+
+            <div class="inputContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2e2e2e" class="inputIcon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg>
+                <input placeholder="N° telefone" id="telefone" class="inputField" type="text">
+            </div>        
+                  
+            <div class="inputContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#2e2e2e" class="inputIcon" viewBox="0 0 16 16">
+                    <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+                  </svg>
+
+                <input placeholder="Email" id="email" class="inputField" type="text">
+            </div>
+
+            <button id="button">Enviar</button>
+            </form>
+            
+              </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
